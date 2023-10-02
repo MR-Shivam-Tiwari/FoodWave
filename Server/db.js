@@ -5,19 +5,23 @@ const uri =
 
 const MongoDB = async () => {
   try {
-    await mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+    await mongoose.connect(uri, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
 
-    mongoose.connection.on('connected', async () => {
+    mongoose.connection.on("connected", async () => {
       console.log("Connected to MongoDB Atlas");
 
       const fetchedData = mongoose.connection.db.collection("dishes");
       const data = await fetchedData.find({}).toArray();
 
-      if (data.length === 0) {
-        console.log("No data found.");
-      } else {
-        // console.log("Fetched data:", data);
-      }
+      // if (data.length === 0) {
+      //   console.log("No data found.");
+      // } else {
+      //   global.dishes = data;
+      //   // console.log(global.dishes)
+      // }
     });
   } catch (err) {
     console.error("Error connecting to MongoDB Atlas:", err);
