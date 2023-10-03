@@ -6,14 +6,20 @@ import CardContent from "@mui/joy/CardContent";
 import IconButton from "@mui/joy/IconButton";
 import Typography from "@mui/joy/Typography";
 
-function FoodCard() {
+function FoodCard({ foodName, options, Img, description }) {
+  let option = options;
+  let priceoptions = Object.keys(option);
+
   return (
     <div>
-      <div className="p-4 ">
-        <Card sx={{ width: 320 }}>
+      <div className="p-2 me-1 ">
+        <Card sx={{ width: 300 }}>
           <div>
-            <Typography level="title-lg">Yosemite National Park</Typography>
-            <Typography level="body-sm">April 24 to May 02, 2021</Typography>
+            <Typography level="title-lg">{foodName}</Typography>
+            <Typography level="body-sm">
+              {description.split(" ").slice(0, 10).join(" ")}
+            </Typography>
+
             <IconButton
               aria-label="bookmark Bahamas Islands"
               variant="plain"
@@ -23,12 +29,7 @@ function FoodCard() {
             ></IconButton>
           </div>
           <AspectRatio minHeight="120px" maxHeight="200px">
-            <img
-              src="https://images.unsplash.com/photo-1527549993586-dff825b37782?auto=format&fit=crop&w=286"
-              srcSet="https://images.unsplash.com/photo-1527549993586-dff825b37782?auto=format&fit=crop&w=286&dpr=2 2x"
-              loading="lazy"
-              alt=""
-            />
+            <img src={Img} srcSet={Img} loading="lazy" alt="" />
           </AspectRatio>
           <CardContent orientation="horizontal">
             <div>
@@ -42,15 +43,20 @@ function FoodCard() {
                 })}
               </select>
               <select className="p-2 m-1  bg-light rounded">
-                <option value={"half"}>Half</option>
-                <option value={"full"}>Full</option>
+                {priceoptions.map((data) => {
+                  return (
+                    <option key={data} value={data}>
+                      {data}
+                    </option>
+                  );
+                })}
               </select>
             </div>
             <div>
               <div>
                 <Typography level="body-xs">Total price:</Typography>
                 <Typography fontSize="lg" fontWeight="lg">
-                $20
+                  $20
                 </Typography>
               </div>
 
