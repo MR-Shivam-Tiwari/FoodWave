@@ -44,6 +44,7 @@ function Home() {
       <Navbar />
       <div>
         <Carousal />
+        
       </div>
       <div className="p-2">
         {foodCat.length !== 0
