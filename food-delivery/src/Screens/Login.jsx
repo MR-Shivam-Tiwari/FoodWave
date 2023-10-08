@@ -79,21 +79,25 @@ function Login() {
                   <Input
                     placeholder="Enter your email"
                     variant="outlined"
+                    className="mb-2"
                     name="email"
                     value={details.email}
                     onChange={handleChange}
                   />
 
-                  <div className="mb-3"></div>
-                  <FormLabel className="font-weight-bold">Password*</FormLabel>
-                  <Input
-                    type="text"
-                    placeholder="Enter your password"
-                    variant="outlined"
-                    name="password"
-                    value={details.password}
-                    onChange={handleChange}
-                  />
+                  <div className="mb-3">
+                    <FormLabel className="font-weight-bold">
+                      Password*
+                    </FormLabel>
+                    <Input
+                      type="text"
+                      placeholder="Enter your password"
+                      variant="outlined"
+                      name="password"
+                      value={details.password}
+                      onChange={handleChange}
+                    />
+                  </div>
 
                   <Button
                     type="submit"
