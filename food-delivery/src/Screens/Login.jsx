@@ -15,40 +15,50 @@ const validationSchema = Yup.object({
 function Login() {
   const navigate = useNavigate();
 
-  const [showPassword, setShowPassword] = useState(false);
-  const [details, setdetails] = useState({
+  const [details, setDetails] = useState({
     email: "",
     password: "",
   });
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/loginuser", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email: details.email,
-        password: details.password,
-      }),
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setDetails({
+      ...details,
+      [name]: value,
     });
-   
-    const json = await response.json();
-    console.log(json);
-    if (!json.success) {
-      alert("Enter Valid Credentials");
-    }
-    if (json.success) {
-      localStorage.setItem("authToken",json.authToken)
-      console.log(localStorage.getItem("authToken"))
-      navigate("/")
-    }
-    
   };
 
-  const handleChange = (event) => {
-    setdetails({ ...details, [event.target.name]: event.target.value });
-  };
+  async function handleSubmit(e) {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("http://localhost:5000/api/loginuser", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: details.email,
+          password: details.password,
+        }),
+      });
+
+      const json = await response.json();
+
+      if (!json.success) {
+        alert("Invalid Credentials");
+      } else {
+        localStorage.setItem("authToken", json.authToken);
+        navigate("/");
+        alert("Login Successful");
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  }
+  // const handleChange = (event) => {
+  //   setdetails({ ...details, [event.target.name]: event.target.value });
+  // };
 
   return (
     <div>
@@ -64,60 +74,27 @@ function Login() {
                   The faster you fill up, the faster you get a ticket
                 </p>
 
-                <form
-                 onSubmit={handleSubmit}
-                >
-                   <FormLabel className="font-weight-bold">Email*</FormLabel>
+                <form onSubmit={handleSubmit}>
+                  <FormLabel className="font-weight-bold">Email*</FormLabel>
                   <Input
                     placeholder="Enter your email"
                     variant="outlined"
-                    color="white"
-                    className="border mb-3"
                     name="email"
                     value={details.email}
                     onChange={handleChange}
-                    //   {...formik.getFieldProps("email")}
                   />
-                  {/* {formik.touched.email && formik.errors.email ? (
-                    <div className="error text-danger font-weight-bold mt-1">
-                      {formik.errors.email}
-                    </div>
-                  ) : null} */}
+
                   <div className="mb-3"></div>
                   <FormLabel className="font-weight-bold">Password*</FormLabel>
                   <Input
-                    // type={showPassword ? "text" : "password"}
+                    type="text"
                     placeholder="Enter your password"
                     variant="outlined"
-                    color="white"
-                    className="border mb-3"
                     name="password"
                     value={details.password}
                     onChange={handleChange}
-                    //   {...formik.getFieldProps("password")}
-                    endDecorator={
-                      <i
-                        className={`bi ${
-                          showPassword ? "bi-eye-slash" : "bi-eye"
-                        }`}
-                        onClick={() => setShowPassword(!showPassword)}
-                      ></i>
-                    }
                   />
-                  {/* {formik.touched.password && formik.errors.password ? (
-                    <div className="error text-danger font-weight-bold mt-1">
-                      {formik.errors.password}
-                    </div>
-                  ) : null} */}
-                  <div
-                    className="d-flex align-items-center justify-content-end mb-2 font-weight-bold"
-                    style={{ textDecoration: "underline" }}
-                  >
-                    <Link to="/auth/institute/recover">
-                      {/* <p className="text-dark">Forgot Password?</p> */}
-                    </Link>
-                  </div>
-                  {/* <p className='mb-4 fs-14 text-dark font-weight-bold'>Must be at least 8 characters.</p> */}
+
                   <Button
                     type="submit"
                     fullWidth

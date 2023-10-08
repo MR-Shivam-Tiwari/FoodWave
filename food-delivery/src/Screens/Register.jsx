@@ -17,6 +17,7 @@ const validationSchema = Yup.object({
 });
 
 function Register() {
+  const navigate = useNavigate();
   const [state, setState] = useState(false);
 
   const [showPassword, setShowPassword] = useState(false);
@@ -43,11 +44,14 @@ function Register() {
 
     const json = await response.json();
     console.log(json);
-    if (!json.success) {
+    if (json.success) {
+      // Registration was successful, navigate to the login page
+
+      navigate("/login");
+    } else {
       alert("Enter Valid Credentials");
     }
   };
-
   const handleChange = (event) => {
     setdetails({ ...details, [event.target.name]: event.target.value });
   };
@@ -118,14 +122,7 @@ function Register() {
                       ></i>
                     }
                   />
-                  {/* {formik.touched.password && formik.errors.password ? (
-                  <div className="error text-danger font-weight-bold mt-1">
-                    {formik.errors.password}
-                  </div>
-                ) : null} */}
-                  {/* <p className="mb-3 fs-14 text-dark font-weight-bold">
-                    Must be at least 8 characters.
-                  </p> */}
+
                   <FormLabel className="font-weight-bold">Location*</FormLabel>
                   <Input
                     placeholder="Enter your Location"

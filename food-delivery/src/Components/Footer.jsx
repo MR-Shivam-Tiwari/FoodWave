@@ -12,8 +12,7 @@ function Footer() {
             <div className="col-md-12 text-center">
               <p className="copyright">
                 Copyright &copy;{new Date().getFullYear()} All rights reserved |
-                This Website is made by <strong>Shivam</strong> 
-                
+                This Website is made by <strong>Shivam</strong>
               </p>
             </div>
           </div>
