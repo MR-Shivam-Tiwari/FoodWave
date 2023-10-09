@@ -39,7 +39,7 @@ function Navbar() {
               <Link className="nav-link active" aria-current="page" to="/">
                 Home
               </Link>
-            </li>
+            </li> 
             {/*  */}
             {localStorage.getItem("authToken") ? (
               <li className="nav-item">
