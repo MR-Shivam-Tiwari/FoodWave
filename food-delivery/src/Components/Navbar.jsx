@@ -37,14 +37,18 @@ function Navbar() {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to="/">
-                Home
+                <Button variant="plain" className="me-2 ">
+                  Home
+                </Button>
               </Link>
-            </li> 
+            </li>
             {/*  */}
             {localStorage.getItem("authToken") ? (
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to="/">
-                  My Orders
+                  <Button variant="plain" className="me-2 ">
+                    My Orders
+                  </Button>
                 </Link>
               </li>
             ) : (
