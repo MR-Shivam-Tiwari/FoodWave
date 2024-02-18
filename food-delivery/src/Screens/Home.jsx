@@ -62,7 +62,7 @@ function Home() {
 
   return (
     <div>
-      <Navbar />
+     
       <SearchFood search={search} onChange={handleSearchChange} />
       <div className="mb-4 container">
         {search.length !== 0 && fooditem.length !== 0 ? (
@@ -118,62 +118,13 @@ function Home() {
         )}
       </div>
       <Benifits />
-      {/* <div className=" container-fluid ">
-        {foodCat.length !== 0
-          ? foodCat
-              .filter((data) =>
-                fooditem.some(
-                  (item) =>
-                    item?.CategoryName === data?.Categories &&
-                    item.name.toLowerCase().includes(search.toLowerCase())
-                )
-              )
-              .map((data) => {
-                return (
-                  <div className="row mb-3 justify-content-center align-items-center text-center rounded-3  border ">
-                    <div className="fw-bold fs-3" key={data._id}>
-                      {data.Categories}
-                    </div>
-                    {fooditem && fooditem.length !== 0 ? (
-                      fooditem
-                        .filter(
-                          (item) =>
-                            item?.CategoryName === data?.Categories &&
-                            item.name
-                              .toLowerCase()
-                              .includes(search.toLowerCase())
-                        )
-                        .map((filterItems) => {
-                          return (
-                            <div
-                              className="col-12 col-md-6 col-lg-3"
-                              key={filterItems?._id}
-                            >
-                              <FoodCard
-                                foodName={filterItems?.name}
-                                options={filterItems?.options[0]}
-                                Img={filterItems?.img}
-                                description={filterItems?.description}
-                              />
-                            </div>
-                          );
-                        })
-                    ) : (
-                      <p>No food items found</p>
-                    )}
-                  </div>
-                );
-              })
-          : ""}
-      </div> */}
+      
       <SpecialDishes />
 
       <HealthyFood />
       <CustomerRating />
       <LoginBanner />
-      <div>
-        <Footer />
-      </div>
+      
     </div>
   );
 }

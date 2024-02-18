@@ -139,6 +139,7 @@ function Navbar() {
           </div>
           <div className="d-flex align-items-center gap-2 d-none d-lg-block  ">
             <Link
+            to ="/"
               variant="plain "
               className="me-4"
               style={
@@ -150,6 +151,7 @@ function Navbar() {
               Home
             </Link>
             <Link
+            to="/offers"
             className="me-4"
               style={
                 hoveredLinks[1] ? { ...linkStyles, ...hoverStyles } : linkStyles
@@ -160,6 +162,7 @@ function Navbar() {
               Offers
             </Link>
             <Link
+            to='/foods'
             className="me-4"
               style={
                 hoveredLinks[2] ? { ...linkStyles, ...hoverStyles } : linkStyles
