@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Divider, FormLabel, Input } from "@mui/joy";
+import { Button, Divider, FormLabel } from "@mui/joy";
 import { Link } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -76,7 +76,7 @@ function Login() {
 
                 <form onSubmit={handleSubmit}>
                   <FormLabel className="font-weight-bold">Email*</FormLabel>
-                  <Input
+                  <input
                     placeholder="Enter your email"
                     variant="outlined"
                     className="mb-2"
@@ -89,7 +89,7 @@ function Login() {
                     <FormLabel className="font-weight-bold">
                       Password*
                     </FormLabel>
-                    <Input
+                    <input
                       type="text"
                       placeholder="Enter your password"
                       variant="outlined"

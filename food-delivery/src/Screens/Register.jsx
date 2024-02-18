@@ -75,7 +75,7 @@ function Register() {
 
                 <form onSubmit={handleSubmit}>
                   <FormLabel className="font-weight-bold">Name*</FormLabel>
-                  <Input
+                  <input
                     placeholder="Enter your Name"
                     variant="outlined"
                     color="white"
@@ -86,7 +86,7 @@ function Register() {
                     //   {...formik.getFieldProps("email")}
                   />
                   <FormLabel className="font-weight-bold">Email*</FormLabel>
-                  <Input
+                  <input
                     placeholder="Enter your email"
                     variant="outlined"
                     color="white"
@@ -103,7 +103,7 @@ function Register() {
                 ) : null} */}
 
                   <FormLabel className="font-weight-bold">Password*</FormLabel>
-                  <Input
+                  <input
                     // type={showPassword ? "text" : "password"}
                     placeholder="Enter your password"
                     variant="outlined"
@@ -124,8 +124,7 @@ function Register() {
                   />
 
                   <FormLabel className="font-weight-bold">Location*</FormLabel>
-                  <Input
-                    placeholder="Enter your Location"
+                  <input
                     variant="outlined"
                     color="white"
                     className="border mb-3"
