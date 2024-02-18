@@ -35,4 +35,4 @@ To get started with FoodWave, follow these simple steps:
 
 1. **Clone the Repository**: Copy and paste the following command in your terminal or command prompt:
    ```bash
-  
+  https://github.com/MR-Shivam-Tiwari/FoodWave.git
