@@ -1,12 +1,9 @@
-import { Button, Divider, FormLabel, Input } from "@mui/joy";
+import { Button, FormLabel } from "@mui/joy";
 import React, { useState } from "react";
-import { Link, redirect, useHref } from "react-router-dom";
-import { useFormik } from "formik";
+import { Link } from "react-router-dom";
+import sidebarimg from "./LoginSideImage.png";
 import * as Yup from "yup";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { useRef } from "react";
-// import { toast } from "react-hot-toast";
 const validationSchema = Yup.object({
   email: Yup.string()
     .email("Invalid email format")
@@ -56,16 +53,19 @@ function Register() {
     setdetails({ ...details, [event.target.name]: event.target.value });
   };
 
+  const flippedVerticalImageStyle = {
+    transform: "scaleX(-1)",
+  };
   return (
     <div>
-      <div className="container-fluid  ">
+      <div className="  ">
         <div className="row" hidden={state}>
-          <div className="col-12 col-lg-6">
-            <div className=" " style={{ marginTop: "12%" }}>
-              <div
-                className="rounded w-75 w-lg-50  align-items-center m-auto p-1 my-3"
-                style={{}}
-              >
+          <div className="col">
+            <div
+              className="d-flex align-items-center justify-content-center "
+              style={{ marginTop: "8%" }}
+            >
+              <div className="" style={{}}>
                 <h3 className="text-start mb-2 font-weight-bold">
                   Create account
                 </h3>
@@ -74,24 +74,34 @@ function Register() {
                 </p>
 
                 <form onSubmit={handleSubmit}>
-                  <FormLabel className="font-weight-bold">Name*</FormLabel>
+                  <FormLabel className="fw-bold">Name*</FormLabel>
                   <input
                     placeholder="Enter your Name"
                     variant="outlined"
                     color="white"
+                    style={{
+                      width: "350px",
+                      border: "1px solid #cf4b3f",
+                      borderRadius: "5px",
+                    }}
                     name="name"
-                    className="border mb-3"
+                    className=" mb-3 p-2"
                     value={details.name}
                     onChange={handleChange}
                     //   {...formik.getFieldProps("email")}
                   />
-                  <FormLabel className="font-weight-bold">Email*</FormLabel>
+                  <FormLabel className="fw-bold">Email*</FormLabel>
                   <input
                     placeholder="Enter your email"
                     variant="outlined"
                     color="white"
-                    className="border mb-3"
+                    className="p-2 mb-3"
                     name="email"
+                    style={{
+                      width: "350px",
+                      border: "1px solid #cf4b3f",
+                      borderRadius: "5px",
+                    }}
                     value={details.email}
                     onChange={handleChange}
                     //   {...formik.getFieldProps("email")}
@@ -102,14 +112,19 @@ function Register() {
                   </div>
                 ) : null} */}
 
-                  <FormLabel className="font-weight-bold">Password*</FormLabel>
+                  <FormLabel className="fw-bold">Password*</FormLabel>
                   <input
                     // type={showPassword ? "text" : "password"}
                     placeholder="Enter your password"
                     variant="outlined"
                     color="white"
-                    className="border mb-3"
+                    className="p-2 mb-3"
                     name="password"
+                    style={{
+                      width: "350px",
+                      border: "1px solid #cf4b3f",
+                      borderRadius: "5px",
+                    }}
                     value={details.password}
                     onChange={handleChange}
                     //   {...formik.getFieldProps("password")}
@@ -123,26 +138,33 @@ function Register() {
                     }
                   />
 
-                  <FormLabel className="font-weight-bold">Location*</FormLabel>
+                  <FormLabel className="fw-bold">Location*</FormLabel>
                   <input
                     variant="outlined"
                     color="white"
-                    className="border mb-3"
+                    className="p-2 mb-3 "
+                    placeholder="Enter Your Location"
+                    style={{
+                      width: "350px",
+                      border: "1px solid #cf4b3f",
+                      borderRadius: "5px",
+                    }}
                     name="geoloaction"
                     value={details.geoloaction}
                     onChange={handleChange}
                     //   {...formik.getFieldProps("email")}
                   />
+                </form>
+                <div className="d-flex align-items-center justify-content-center">
                   <Button
                     type="submit"
                     className="text-white mb-3 mt-2"
                     color="primary"
-                    fullWidth
-                    style={{ backgroundColor: "#f3693a" }}
+                    style={{ backgroundColor: "#cf4b3f" }}
                   >
                     Create Account
                   </Button>
-                </form>
+                </div>
                 <p className="text-center text-dark ">
                   Already have an account?{" "}
                   <strong style={{ textDecoration: "underline" }}>
@@ -152,16 +174,16 @@ function Register() {
               </div>
             </div>
           </div>
-          <div className="col p-0">
-            <div className="w-100" style={{ overflow: "hidden" }}>
+          <div className="col d-none d-lg-block ">
+            <div className="w-100">
               <img
-                className="w-100"
-                src="https://images.unsplash.com/photo-1590299275619-8ab3db954d61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                className="w-100 img-fluid flip-vertical"
+                src={sidebarimg}
                 alt="logo"
                 style={{
-                  width: "100%",
-                  marginTop: "-30%",
-                  marginBottom: "-28%",
+                  ...flippedVerticalImageStyle,
+                  height: "570px",
+                  width: "550px",
                 }}
               />
             </div>

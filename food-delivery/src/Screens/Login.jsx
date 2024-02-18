@@ -3,6 +3,7 @@ import { Button, Divider, FormLabel } from "@mui/joy";
 import { Link } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import sidebarimg from "./LoginSideImage.png";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -62,55 +63,81 @@ function Login() {
 
   return (
     <div>
-      <div className="container-fluid  ">
+      <div className="  ">
         <div className="row">
-          <div className="col-12 col-lg-6">
-            <div className=" " style={{ marginTop: "12%" }}>
-              <div className="  rounded w-75 w-lg-50 align-items-center m-auto   my-3">
+          <div className="col d-none d-lg-block ">
+            <div className="">
+              <img
+                className=""
+                src={sidebarimg}
+                alt="logo"
+                style={{
+                  height: "570px",
+                  width: "550px",
+                }}
+              />
+            </div>
+          </div>
+          <div className="col ">
+            <div
+              className="d-flex align-items-center justify-content-center p-3  "
+              style={{ marginTop: "120px" }}
+            >
+              <div className="      ">
                 <h3 className="text-start mb-2 font-weight-bold">
                   Welcome Back{" "}
                 </h3>
-                <p className="text-start mb-3 fs-13 text-dark font-weight-bold ">
+                <p className="text-start mb-3 fs-13 text-dark font-weight-bold w-75 ">
                   The faster you fill up, the faster you get a ticket
                 </p>
+                <div className="">
+                  <form onSubmit={handleSubmit}>
+                    <div>
+                      <FormLabel className="fw-bold">Email*</FormLabel>
+                      <input
+                        placeholder="Enter your email"
+                        style={{
+                          border: "1px solid  #cf4b3f",
+                          borderRadius: "5px",
+                          width: "350px",
+                        }}
+                        className="mb-3 p-2"
+                        name="email"
+                        value={details.email}
+                        onChange={handleChange}
+                      />
+                    </div>
 
-                <form onSubmit={handleSubmit}>
-                  <FormLabel className="font-weight-bold">Email*</FormLabel>
-                  <input
-                    placeholder="Enter your email"
-                    variant="outlined"
-                    className="mb-2"
-                    name="email"
-                    value={details.email}
-                    onChange={handleChange}
-                  />
-
-                  <div className="mb-3">
-                    <FormLabel className="font-weight-bold">
-                      Password*
-                    </FormLabel>
-                    <input
-                      type="text"
-                      placeholder="Enter your password"
-                      variant="outlined"
-                      name="password"
-                      value={details.password}
-                      onChange={handleChange}
-                    />
-                  </div>
-
-                  <Button
-                    type="submit"
-                    fullWidth
-                    color="primary"
-                    variant="solid"
-                    className="mb-3"
-                    style={{ backgroundColor: "#f3693a" }}
-                  >
-                    Login
-                  </Button>
-                </form>
-
+                    <div className="mb-3">
+                      <FormLabel className="fw-bold">Password*</FormLabel>
+                      <input
+                        type="text"
+                        placeholder="Enter your password"
+                        variant="outlined"
+                        className="p-2"
+                        name="password"
+                        value={details.password}
+                        onChange={handleChange}
+                        style={{
+                          border: "1px solid  #cf4b3f",
+                          borderRadius: "5px",
+                          width: "350px",
+                        }}
+                      />
+                    </div>
+                    <div className="d-flex justify-content-center mt-4">
+                      <Button
+                        type="submit"
+                        color="primary"
+                        variant="solid"
+                        className="mb-3 "
+                        style={{ backgroundColor: "#cf4b3f" }}
+                      >
+                        Login
+                      </Button>
+                    </div>
+                  </form>
+                </div>
                 <p className="text-center text-dark ">
                   Don't have an account?{" "}
                   <strong style={{ textDecoration: "underline" }}>
@@ -119,21 +146,6 @@ function Login() {
                   </strong>
                 </p>
               </div>
-            </div>
-          </div>
-
-          <div className="col p-0">
-            <div className="w-100" style={{ overflow: "hidden" }}>
-              <img
-                className="w-100"
-                src="https://images.unsplash.com/photo-1609405978461-63be963705b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1087&q=80"
-                alt="logo"
-                style={{
-                  width: "100%",
-                  marginTop: "-30%",
-                  marginBottom: "-28%",
-                }}
-              />
             </div>
           </div>
         </div>
