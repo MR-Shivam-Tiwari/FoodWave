@@ -6,7 +6,6 @@ Welcome to FoodWave - the ultimate app for ordering delicious meals with ease. B
 
 - **Easy Browsing**: Explore a variety of menus effortlessly.
 - **Quick Ordering**: Place orders with just a few taps.
-- **Real-time Tracking**: Track your delivery to know exactly when your meal will arrive.
 
 ## Home Page
 
@@ -16,8 +15,9 @@ The home page of FoodWave welcomes you with a clean and intuitive interface. Her
 2. **Popular Categories**: Quickly navigate through different cuisines and types of dishes.
 3. **Special Offers**: Keep an eye on exclusive deals and discounts.
 
+![image](https://github.com/MR-Shivam-Tiwari/FoodWave/assets/114647321/b73c3b8b-7c03-4b4f-b309-dec56a2b3019)
 
-*Replace this with an actual screenshot of the FoodWave home page.*
+
 
 ## Search Functionality
 
@@ -26,8 +26,9 @@ Finding your favorite meal is a breeze with FoodWave's powerful search functiona
 1. **Keyword Search**: Enter keywords to search for specific dishes, restaurants, or cuisines.
 2. **Filter Options**: Narrow down your search using filters like price range, ratings, and delivery time.
 
+![image](https://github.com/MR-Shivam-Tiwari/FoodWave/assets/114647321/6158dd1d-35df-4c96-aa87-b18d41db2ab8)
 
-*Replace this with an actual screenshot of the FoodWave search functionality.*
+
 
 ## Getting Started
 
@@ -35,4 +36,5 @@ To get started with FoodWave, follow these simple steps:
 
 1. **Clone the Repository**: Copy and paste the following command in your terminal or command prompt:
    ```bash
-  https://github.com/MR-Shivam-Tiwari/FoodWave.git
+   https://github.com/MR-Shivam-Tiwari/FoodWave.git
+  
