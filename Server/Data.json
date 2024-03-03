@@ -1,0 +1,221 @@
+[
+  {
+    "CategoryName": "Biryani/Rice",
+    "name": "Chicken Fried Rice - Updated",
+    "img": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2hpY2tlbiUyMGZyaWVkJTIwcmljZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "options": [
+      {
+        "half": "130",
+        "full": "220"
+      }
+    ],
+    "description": "Delicious fried rice made using Indian masalas and Basmati rice. It includes barbequed pieces of chicken, paneer, or mutton for added flavor."
+  },
+  {
+    "CategoryName": "Biryani/Rice",
+    "name": "Veg Fried Rice - Updated",
+    "img": "https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmVnJTIwZnJpZWQlMjByaWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "options": [
+      {
+        "half": "110",
+        "full": "200"
+      }
+    ],
+    "description": "Savory fried rice made using Indian masalas and fragrant Basmati rice. It features barbequed pieces of paneer, chicken, or mutton for an extra kick."
+  },
+  {
+    "CategoryName": "Biryani/Rice",
+    "name": "Fish Biryani - Updated",
+    "img": "https://media.istockphoto.com/photos/king-fish-biryani-with-raita-served-in-a-golden-dish-isolated-on-dark-picture-id1409942571?b=1&k=20&m=1409942571&s=170667a&w=0&h=ozlMJf5hsDmS2sSdEdBWnoSZOEITef4qGMeWeq2lyTc=",
+    "options": [
+      {
+        "half": "200",
+        "full": "320"
+      }
+    ],
+    "description": "Aromatic fish biryani prepared using Indian spices and premium Basmati rice. It incorporates barbequed pieces of paneer, chicken, or mutton for added taste."
+  },
+  {
+    "CategoryName": "Biryani/Rice",
+    "name": "Chicken Biryani - Updated",
+    "img": "https://cdn.pixabay.com/photo/2019/11/04/12/16/rice-4601049__340.jpg",
+    "options": [
+      {
+        "half": "170",
+        "full": "300"
+      }
+    ],
+    "description": "Flavorful chicken biryani made with a blend of Indian spices and long-grain Basmati rice. It includes barbequed pieces of paneer, chicken, or mutton for a delightful experience."
+  },
+  {
+    "CategoryName": "Biryani/Rice",
+    "name": "Veg Biryani - Updated",
+    "img": "https://media.istockphoto.com/photos/veg-biryani-picture-id1363306527?b=1&k=20&m=1363306527&s=170667a&w=0&h=VCbro7CX8nq2kruynWOCO2GbMGCea2dDJy6O6ebCKD0=",
+    "options": [
+      {
+        "half": "150",
+        "full": "260"
+      }
+    ],
+    "description": "Delightful vegetarian biryani crafted with Indian spices and fragrant Basmati rice. It includes barbequed pieces of paneer, chicken, or mutton to enhance the taste."
+  },
+  {
+    "CategoryName": "Biryani/Rice",
+    "name": "Prawns Fried Rice - Updated",
+    "img": "https://cdn.pixabay.com/photo/2018/03/23/08/27/thai-fried-rice-3253027__340.jpg",
+    "options": [
+      {
+        "half": "120",
+        "full": "220"
+      }
+    ],
+    "description": "Tasty prawns fried rice made using Indian spices and Basmati rice. It includes barbequed pieces of paneer, chicken, or mutton for a delectable experience."
+  },
+  {
+    "CategoryName": "Starter",
+    "name": "Chilli Paneer - Updated",
+    "img": "https://media.istockphoto.com/photos/spicy-paneer-or-chilli-paneer-or-paneer-tikka-or-cottage-cheese-in-picture-id697316634?b=1&k=20&m=697316634&s=170667a&w=0&h=bctfHdYTz9q2dJUnuxGRDUUwC9UBWjL_oQo5ECVVDAs=",
+    "options": [
+      {
+        "half": "120",
+        "full": "200"
+      }
+    ],
+    "description": "Spicy chilli paneer prepared with Indian masalas and served hot. It includes barbequed pieces of paneer, chicken, or mutton for added zest."
+  },
+  {
+    "CategoryName": "Starter",
+    "name": "Paneer 65 - Updated",
+    "img": "https://media.istockphoto.com/photos/paneer-tikka-kabab-in-red-sauce-is-an-indian-dish-made-from-chunks-of-picture-id1257507446?b=1&k=20&m=1257507446&s=170667a&w=0&h=Nd7QsslbvPqOcvwu1bY0rEPZXJqwoKTYCal3nty4X-Y=",
+    "options": [
+      {
+        "half": "150",
+        "full": "260"
+      }
+    ],
+    "description": "Delicious paneer 65 cooked with Indian spices and a rich tomato sauce. It includes barbequed pieces of paneer, chicken, or mutton for an irresistible taste."
+  },
+  {
+    "CategoryName": "Starter",
+    "name": "Chicken Tikka - Updated",
+    "img": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2hpY2tlbiUyMHRpa2thfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "options": [
+      {
+        "half": "170",
+        "full": "300"
+      }
+    ],
+    "description": "Juicy chicken tikka marinated in Indian spices and grilled to perfection. It includes barbequed pieces of paneer, chicken, or mutton for a mouthwatering experience."
+  },
+  {
+    "CategoryName": "Pizza",
+    "name": "Margherita Pizza",
+    "img": "https://images.unsplash.com/photo-1600241167929-055117731776",
+    "options": [
+      {
+        "regular": "110",
+        "medium": "220",
+        "large": "330"
+      }
+    ],
+    "description": "Classic Margherita pizza with tomato sauce, mozzarella cheese, and fresh basil leaves."
+  },
+  {
+    "CategoryName": "Pizza",
+    "name": "Pepperoni Pizza",
+    "img": "https://images.unsplash.com/photo-1600241300450-bc4d7f63b317",
+    "options": [
+      {
+        "regular": "130",
+        "medium": "240",
+        "large": "360"
+      }
+    ],
+    "description": "Savory pepperoni pizza topped with tomato sauce, mozzarella cheese, and spicy pepperoni slices."
+  },
+  {
+    "CategoryName": "Pizza",
+    "name": "Hawaiian Pizza",
+    "img": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+    "options": [
+      {
+        "regular": "120",
+        "medium": "230",
+        "large": "350"
+      }
+    ],
+    "description": "Delightful Hawaiian pizza featuring tomato sauce, mozzarella cheese, ham, and pineapple."
+  },
+  {
+    "CategoryName": "Burger",
+    "name": "Classic Beef Burger",
+    "img": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+    "options": [
+      {
+        "single": "150",
+        "double": "250"
+      }
+    ],
+    "description": "A classic beef burger with a juicy patty, lettuce, tomato, onion, and special sauce."
+  },
+  {
+    "CategoryName": "Burger",
+    "name": "Vegetarian Burger",
+    "img": "https://images.unsplash.com/photo-1586192538854-0d6a594f760e",
+    "options": [
+      {
+        "single": "130",
+        "double": "220"
+      }
+    ],
+    "description": "Satisfying vegetarian burger with a veggie patty, lettuce, tomato, onion, and mayo."
+  },
+  {
+    "CategoryName": "Pasta",
+    "name": "Spaghetti Carbonara",
+    "img": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+    "options": [
+      {
+        "small": "140",
+        "large": "260"
+      }
+    ],
+    "description": "Classic Italian spaghetti carbonara with eggs, cheese, pancetta, and black pepper."
+  },
+  {
+    "CategoryName": "Pasta",
+    "name": "Vegetable Alfredo Pasta",
+    "img": "https://images.unsplash.com/photo-1600241167929-055117731776",
+    "options": [
+      {
+        "small": "120",
+        "large": "240"
+      }
+    ],
+    "description": "Creamy Alfredo pasta with a medley of fresh vegetables, garlic, and parmesan cheese."
+  },
+  {
+    "CategoryName": "Dessert",
+    "name": "Chocolate Lava Cake",
+    "img": "https://images.unsplash.com/photo-1584610655082-e69e63b3b7b3",
+    "options": [
+      {
+        "single": "80",
+        "double": "150"
+      }
+    ],
+    "description": "Decadent chocolate lava cake with a gooey molten center, served with vanilla ice cream."
+  },
+  {
+    "CategoryName": "Dessert",
+    "name": "Tiramisu",
+    "img": "https://images.unsplash.com/photo-1541593524507-7c69231c759b",
+    "options": [
+      {
+        "single": "90",
+        "double": "160"
+      }
+    ],
+    "description": "Classic Italian tiramisu dessert with layers of coffee-soaked ladyfingers and mascarpone cream."
+  }
+]
