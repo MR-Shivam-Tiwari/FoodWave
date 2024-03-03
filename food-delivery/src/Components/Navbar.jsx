@@ -173,7 +173,6 @@ function Navbar() {
               Food
             </Link>
             <Link
-            to='/contact-us'
             className="me-4"
               style={
                 hoveredLinks[3] ? { ...linkStyles, ...hoverStyles } : linkStyles
@@ -181,7 +180,7 @@ function Navbar() {
               onMouseEnter={() => handleMouseEnter(3)}
               onMouseLeave={() => handleMouseLeave(3)}
             >
-              Contact Us
+              Services
             </Link>
 
             {localStorage.getItem("authToken") ? (
