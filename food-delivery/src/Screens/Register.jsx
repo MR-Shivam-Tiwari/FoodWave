@@ -26,7 +26,7 @@ function Register() {
   });
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/newuser", {
+    const response = await fetch("https://food-wave-chi.vercel.app/api/newuser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

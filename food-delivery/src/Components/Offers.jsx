@@ -14,7 +14,7 @@ function Offers() {
   const [search, setsearch] = useState("");
   const loadData = async () => {
     try {
-      let response = await fetch("http://localhost:5000/api/fooddata", {
+      let response = await fetch("https://food-wave-chi.vercel.app/api/fooddata", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
